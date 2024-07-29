@@ -1,0 +1,87 @@
+body{
+    background-image: url(file:///F:/term%203/porfolioproj/retrosupply-jLwVAUtLOAQ-unsplash.jpg);
+    background-repeat: repeat;
+    height:2800px;
+    align-items: center;
+   }
+    .head{
+        padding-left:20px;
+        font-size:20px;
+        padding-bottom:15px;
+        padding-top:15px;
+        color:orange;
+        background-color:black ;
+    }
+    .h1{
+        color:red;
+        background-color: aqua;
+        text-align: center;
+        font-size:25px;
+        /* padding-top:5px;
+        padding-bottom:5px; */
+
+    }
+    .d1{
+        
+            margin-left:38%;
+            font-size:20px;
+            margin-bottom:100px;
+            color:white;
+
+    }
+    .d2{
+        
+        margin-left:30%;
+        font-size:20px;
+        margin-bottom:100px;
+        color:white;
+
+}
+.d3{
+        
+    margin-left:20%;
+    font-size:20px;
+    margin-bottom:100px;
+    color:white;
+
+}
+    .inp{
+        width:400px;
+        height:30px;
+        font-size: 20px;
+        background-color:black;
+        opacity:0.5;
+        color:white;
+        border-radius: 15px;
+        border-style:inset;
+    }
+    .choice{
+        background-color: black;
+        color:white;
+        width:400px;
+        height:30px;
+    }
+    .textar{
+        /* font-size: 40px; */
+        background:black;
+        color:white;
+        border-radius: 20px;
+        border-style:inset;
+
+        opacity: 0.8;
+    }
+    .submit{
+        margin-left:150px;
+        background-color: aqua;
+        font-size: 25px;;
+        padding-left:20px;
+        padding-right:20px;
+        padding-top:20px;
+        padding-bottom:20px;
+        border-radius: 20px;
+        position: absolute;
+    }  
+    textarea
+    {
+        font-size: 20px;
+    }  

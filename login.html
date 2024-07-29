@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+</head>
+
+<body>
+    <div class="navbar">
+        
+        
+        <a href="F:/term%203/porfolioproj/login.html" class="active">Login</a>
+        <a href="file:///F:/term%203/porfolioproj/signup.html" >Signup</a>
+        <a href="file:///F:/term%203/porfolioproj/home.html#" >About Us</a>
+        <a href="file:///F:/term%203/porfolioproj/sptp.html">Our Portfolio</a>
+        
+        
+    </div>
+
+    <br><br>
+    <div class="login">
+        <center>
+        <form autocomplete="off">
+            <br>
+        <h1>Login</h1>
+
+        </h1>
+        <br>
+        
+        <input type="email" placeholder="Email Id"  required class="choice" id="email"><br><br>
+        <input type="password" placeholder="Password" required class="choice" id="pass"><br>
+        <br><br>
+        <input type="submit" value="Log in" class="cb" onclick="login()"> 
+        
+        <br><br><br>
+        <b><p style="color:antiquewhite">Connect With Us By Social Media Account</p></b>
+        <br><br>
+        
+        <p><a href="https://twitter.com/" class="box1"><ion-icon name="logo-twitter"></ion-icon>Twitter</a>
+            <a href="https://www.facebook.com/" class="box2"><ion-icon name="logo-facebook"></ion-icon>Facebook</a>
+            <a href="https://accounts.google.com/" class="box3"><ion-icon name="logo-google"></ion-icon>Google+</a></p>
+        <p>_________________________________________</p>
+         <b>Don't Have an account?Register now!</p></b><br>
+         <br>
+        <a href="file:///F:/term%203/porfolioproj/signup.html" class="cb">Register</a>
+
+
+
+
+
+
+    </form>
+</center>
+    </div>
+    <script>
+        function login()
+        {
+        {
+            var em =document.getElementById("email").value;
+            var pa =document.getElementById("pass").value;
+        }
+        if(em=="ayush1430.be22@chitkara.edu.in" && pa=="1430")
+        {
+            alert("Login Successful Ayush Sharma")
+            window.open("intro.html");
+        }
+        if(em=="ayush1429.be22@chitkara.edu.in" && pa=="1429")
+        {
+            alert("Login Successful Ayush Rana")
+            window.open("intro.html");
+        }
+        if(em=="ayush1428.be22@chitkara.edu.in" && pa=="1428")
+        {
+            alert("Login Successful Ayush Raghuvanshi")
+            window.open("intro.html");
+        }
+        else 
+        {
+            alert("login failed, try again");
+
+        }
+    }
+    </script>
+
+
+</body>
+</html>

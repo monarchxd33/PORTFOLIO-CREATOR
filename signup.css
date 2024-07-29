@@ -1,0 +1,84 @@
+
+body{
+    overflow:scroll;
+    background-image: url(file:///F:/term%203/porfolioproj/4.jpeg);
+    background-repeat: no-repeat;
+    background-size:100%;
+    height:900px;
+    color:white;
+
+}
+.navbar{
+   
+    color:rgb(204, 32, 32);
+    margin-top:20px;
+    padding-top:20px;
+    padding-bottom:20px;
+    text-align: justify;
+    padding-left:40px;
+
+}
+.navbar a{
+    padding-top:20px;
+    padding-bottom:20px;
+    text-decoration: none;
+    color:white;
+    font-size:25px;
+    padding-left:20px;
+    padding-right:20px;
+}
+.navbar a:hover{
+    background-color: aqua;
+    color:red;
+}
+.navbar a.active{
+    background-color: black;
+    
+
+}
+.hd {
+    color:red;
+    text-align: centre;
+}
+
+.info{
+    margin-left:40%;
+    color:white;
+    font-size: 25px;
+    margin-right:35%;
+    background-color: black;
+    padding:30px;
+    border-radius: 20px;
+    margin-left:35%;
+    
+
+}
+.name{
+        width:350px;
+        height:40px;
+        font-size:20px;
+        background:transparent;
+        border-color: aliceblue;
+        color:white;
+        border-radius: 20px;
+        font-weight: bold;
+
+}
+.box4{
+    border-style:ridge;
+    background-color: aquamarine; 
+    padding-left:80px;
+    padding-right:80px;
+    padding-top:10px;
+    padding-bottom:10px;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left:30px;
+    border-radius:20px;
+   
+   
+
+}
+.box4:hover{
+    background-color: orange;
+}

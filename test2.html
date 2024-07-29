@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample2</title>
+</head>
+<style>
+    .navbar{
+   
+   color:rgb(204, 32, 32);
+   margin-top:20px;
+   padding-top:20px;
+   padding-bottom:20px;
+   text-align: right;
+   padding-left:40px;
+
+
+}
+.navbar a{
+   padding-top:20px;
+   padding-bottom:20px;
+   text-decoration: none;
+   color:aqua;
+   font-size:25px;
+   padding-left:20px;
+   padding-right:20px;
+}
+.navbar a:hover{
+   background-color: aqua;
+   color:red;
+}
+.navbar a.active{
+   background-color: black;
+   
+
+}
+    body{
+        background-color: yellow;
+    }
+    .d1{
+        margin-top:10px;
+        padding-left:150px;
+        font-size: 30px;
+        background-color: aqua;
+        height:auto;
+       font-weight:bold; 
+    }
+    .d1 img{
+        float:right;
+
+    }
+    .d2{
+        background-image: url(file:///F:/term%203/porfolioproj/sample/bgi1_sp2.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        height:1400px;
+        align-items: center;
+        padding-left:400px;
+        font-size:25px;
+        border-radius:20px;
+        padding-right:200px;
+        margin-left:50px;
+        margin-right:50px;
+    }
+    .d3{
+        float: left;
+     background-color:black;
+     color:white;
+     width:300px;
+    height:700px;
+    margin-left:100px;
+    margin-top:20px;
+    border-radius: 20px;
+    padding-left:20px;
+
+    }
+
+</style>
+<body>
+
+    <div class="navbar">
+        
+        
+        <a href="" class="active">Home</a>
+        <!-- <a href="file:///F:/term%203/porfolioproj/signup.html" >Signup</a> -->
+        <a href="file:///F:/term%203/porfolioproj/home.html#" >About Us</a>
+        <a href="F:\term 3\porfolioproj\contact.html">Contact</a>
+        
+        
+    </div>
+
+    <div class="d1">
+        <strong></strong> <span id="name"></span><br>
+        <strong></strong> <span id="Intro"></span><br>
+        <strong></strong> <span id="Inst"></span><br>
+
+        <!-- <strong></strong> <span id="email"></span><br> -->
+        <!-- <strong>Description:</strong><span id="description"></span> -->
+        <img src="file:///F:/term%203/porfolioproj/sample/s1_avator.png" alt="Avator">
+        <h1></h1>
+        <p><b></b></p>
+    </div>
+    <div class="d3">
+        <br><br>
+        <h2>Contact Me</h2>
+        <ul>
+        <li> Email Id: <span id="email"> <span> </li>
+        <li> Contact No: <span id="contactno"></span></li>
+        <li> Github: <span id="github"></span></li>
+        <li> linkedin: <span id="linkid"></span></li>
+        </ul><br><br>
+        <h2>Hobbies</h2>
+
+        <p><span id="hob"></span></p>
+
+        <h2>Acheievements</h2>
+        <p><span id="ach"></span></p>
+
+        
+
+       </div>
+    <div class="d2">
+        <h2>My skills</h2>
+        <p><strong></strong> <span id="skill"></span></p>
+        
+        
+        <h2>Experience</h2>
+        <p><span id="exp"></span></p>
+        
+    </div>
+    <script>
+    // Retrieve the data from localStorage
+    const name = localStorage.getItem('name');
+    const email = localStorage.getItem('email');
+    const contactno = localStorage.getItem('contactno');
+    const github = localStorage.getItem('github');
+    const linkid = localStorage.getItem('linkid');
+    const Inst = localStorage.getItem('Inst');
+    const Intro = localStorage.getItem('Intro');
+    const ach = localStorage.getItem('ach');
+    const hob = localStorage.getItem('hob');
+    const skill = localStorage.getItem('skill');
+    const exp = localStorage.getItem('exp');
+
+    // Set the data to the respective elements
+    document.getElementById('name').textContent = name;
+    document.getElementById('email').textContent = email;
+    document.getElementById('contactno').textContent = contactno;
+    document.getElementById('github').textContent = github;
+    document.getElementById('linkid').textContent = linkid;
+    document.getElementById('Inst').textContent = Inst;
+    document.getElementById('Intro').textContent = Intro;
+    document.getElementById('ach').textContent = ach;
+    document.getElementById('hob').innerHTML = hob;
+    document.getElementById('skill').textContent = skill;
+    document.getElementById('exp').textContent = exp;
+   
+    
+    
+
+    // Clear the localStorage data after use
+    localStorage.clear();
+  
+    </script>
+
+        
+
+</body>
+</html> 

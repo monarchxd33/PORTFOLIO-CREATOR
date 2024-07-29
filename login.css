@@ -1,0 +1,131 @@
+
+body{
+    overflow:scroll;
+    background-image: url(file:///F:/term%203/porfolioproj/6.jpeg);
+    background-repeat: no-repeat;
+    background-size:100%;
+    height:900px;
+
+}
+.navbar{
+   
+    color:rgb(204, 32, 32);
+    margin-top:20px;
+    padding-top:20px;
+    padding-bottom:20px;
+    text-align: justify;
+    padding-left:40px;
+
+}
+.navbar a{
+    padding-top:20px;
+    padding-bottom:20px;
+    text-decoration: none;
+    color:white;
+    font-size:25px;
+    padding-left:20px;
+    padding-right:20px;
+}
+.navbar a:hover{
+    background-image:linear-gradient(to bottom right,pink ,purple);
+    color:black;
+}
+.navbar a.active{
+    background-color: black;
+}
+.login{
+    
+
+    margin-left:34%;
+    margin-right:34%;
+    margin-bottom:0px;
+    border-radius: 20px;
+    height:660px;
+
+    border-color: white;
+    border-style: solid;   
+       
+}
+.choice{
+    width:350px;
+    height:40px;
+    font-size:20px;
+    background: transparent;
+    border-color: antiquewhite;
+    border-radius: 20px;
+}
+.rem{
+    margin-left:0px;
+}
+.cb{
+    font-size:25px;
+    background-color:aquamarine;
+    padding:10px 110px 10px 110px;
+    border-radius: 20px;
+
+}
+.cb:hover{
+    background-color: orange;
+    color:white;
+    padding:12px 118px 12px 118px;
+
+}
+
+.box1{border-style:ridge;
+    border-color:skyblue;
+    background-color:skyblue;    
+    color:white;    
+    font-size:20px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:10px;
+    padding-bottom:10px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.box2{border-style:ridge;
+    border-color:blue;
+    background-color:blue;    
+    color:white;
+    font-size:20px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:10px;
+    padding-bottom:10px;
+    text-decoration: none; 
+    margin-left:20px;    
+    border-radius: 10px;  
+}
+.box3{border-style:ridge;
+    border-color:red;
+    background-color:red;    
+    color:white;
+    font-size:20px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:10px;
+    padding-bottom:10px;
+    text-decoration: none;
+    margin-left:20px;
+    border-radius: 10px; 
+         
+}
+.rn{
+    color:red;
+}
+
+.box4{
+    border-style:ridge;
+    background-color: aquamarine; 
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:10px;
+    padding-bottom:10px;
+    font-size:30px;
+    text-decoration: none;
+
+}
+::placeholder{
+   color:white
+
+}
