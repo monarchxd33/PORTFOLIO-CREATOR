@@ -1,117 +1,155 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>TEMPLATE 3</title>
-<style>
-*{
-    margin:0;
-padding:0
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body{
+    background-image: url(file:///F:/term%203/porfolioproj/retrosupply-jLwVAUtLOAQ-unsplash.jpg);
+    background-repeat: repeat;
+    height:2800px;
+    align-items: center;
+   }
+    .head{
+        padding-left:20px;
+        font-size:20px;
+        padding-bottom:15px;
+        padding-top:15px;
+        color:orange;
+        background-color:black ;
+    }
+    .h1{
+        color:red;
+        background-color: aqua;
+        text-align: center;
+        font-size:25px;
+        /* padding-top:5px;
+        padding-bottom:5px; */
+
+    }
+    .d1{
+        
+            margin-left:38%;
+            font-size:20px;
+            margin-bottom:100px;
+            color:white;
+
+    }
+    .d2{
+        
+        margin-left:30%;
+        font-size:20px;
+        margin-bottom:100px;
+        color:white;
 
 }
-.button {
-  background-color: green;
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin-left:90vw;
-  margin-top:10px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-}
+.d3{
+        
+    margin-left:20%;
+    font-size:20px;
+    margin-bottom:100px;
+    color:white;
 
-.button1 {
-  background-color: white; 
-  color: black; 
-  border: 2px solid #4CAF50;
 }
+    .inp{
+        width:400px;
+        height:30px;
+        font-size: 20px;
+        background-color:black;
+        opacity:0.5;
+        color:white;
+        border-radius: 15px;
+        border-style:inset;
+    }
+    .choice{
+        background-color: black;
+        color:white;
+        width:400px;
+        height:30px;
+    }
+    .textar{
+        /* font-size: 40px; */
+        background:black;
+        color:white;
+        border-radius: 20px;
+        border-style:inset;
 
-.button1:hover {
-  background-color: #4CAF50;
-  color: white;
-}
-
-.button2 {
-  background-color: white; 
-  color: black; 
-  border: 2px solid #008CBA;
-}
-
-.button2:hover {
-  background-color: #008CBA;
-  color: white;
-}
-.nav{
-height:40px;
-width:100%;
-background-color:black;
-color:white;
-margin-top:5px;
-margin-bottom:20px;
-}
-
-.body{
-background-image:linear-gradient(to bottom right,pink,purple);
-}
-
-.left{
-height:945px;
-width:350px;
-background-image: linear-gradient(to right,purple,blue);
-position:fixed;
-}
-
-img {
-margin-top:20px;
-border-radius: 50%;
--webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
-padding-left:20px;
-}
-
-
-.bintro{
-height:350px;
-width:350px;
-padding-top:20px;
-font-family: "Lucida Console", "Courier New", "monospace";
-font-size:30px;
-overflow:hidden;
-text-shadow: 2px 2px 5px red;
-}
-
-.contact{
-height:350px;
-width:350px;
-padding-top:20px;
-font-size:10px;
-overflow:hidden;
-}
-
-</style>
+        opacity: 0.8;
+    }
+    .submit{
+        margin-left:150px;
+        background-color: aqua;
+        font-size: 25px;;
+        padding-left:20px;
+        padding-right:20px;
+        padding-top:20px;
+        padding-bottom:20px;
+        border-radius: 20px;
+        position: absolute;
+    }  
+    textarea
+    {
+        font-size: 20px;
+    }  
+    </style>
 </head>
-<body class="body">
-<div class="nav">
-<button class="button">hello</button>
-<button class="button2">
-HOME
-</button>
+<body>
+    <div class="head">
+        <h1>Information Form</h1>
+        Enter your Details In The Form Given Below
+    </div>
+    <div class="h1">
+        <h1>Personal Details</h1>
+    </div>
+    <div class="d1">
+        <br><br>
+<form id="portfolioForm">
+            Name <br> <input type="text" class="inp" id="name" required><br><br>
+            Email Id:<br> <input type="text" class="inp" id="email" required><br><br>
+            Contact No.:<br><input type="number" class="inp" id="contactno" required><br><br>
+            <button type="submit">Create</button>
+            <b>Your Acheivements:</b><br>
+        <textarea  id="ach" cols="90" rows="10" class="textar" ></textarea><br><br>
+        <b>Breif Introduction</b><br>
+        <textarea id="Intro" cols="60" rows="2" class="textar" placeholder="Include your expertise,passion,work domain" ></textarea><br><br>
+    
+</form>
 </div>
-<div class="left">
-<img src="file:///C:/Users/ayush/OneDrive/Pictures/New%20folder/Zephyrus%20Duo%2015%20x%20Z%D0%AF%C3%98F%C3%98RM_3840x2160.jpg" alt="Paris" width="300" height="300">
-<div class="bintro">
-<br>
-<b>
-<p>Name:Ayush Rana</p><br>
-<p>Age:18</p><br>
-Profession:Student,<br>
-Writer,Freelancer
-<br>
-<p>Qualifications:12th class</p>
-<br>
-</b>
-</div>
-</div>
+
+
+<script>
+    // Function to handle form submission
+    function createPortfolio(event) {
+      event.preventDefault(); // Prevent form submission
+
+      // Get the form inputs
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const contactno = document.getElementById('contactno').value;
+      const ach = document.getElementById('ach').value;
+      const Intro = document.getElementById('Intro').value;
+
+       //   const description = document.getElementById('description').value;
+
+      // Store the data in localStorage
+
+      localStorage.setItem('name', name);
+      localStorage.setItem('email', email);
+      localStorage.setItem('contactno', contactno);
+      localStorage.setItem('ach',ach);
+      localStorage.setItem('Intro',Intro);
+      //   localStorage.setItem('description', description);
+
+      // Redirect to the display page
+      window.location.href = 'test2.html';
+    }
+
+    // Add event listener to the form
+    const form = document.getElementById('portfolioForm');
+    form.addEventListener('submit', createPortfolio);
+</script>
 </body>
 </html>
+    

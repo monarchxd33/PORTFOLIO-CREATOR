@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+    /* <!-- <link rel="stylesheet" href="form.css"> --> */
+    body{
+        background-image: url(file:///F:/term%203/porfolioproj/retrosupply-jLwVAUtLOAQ-unsplash.jpg);
+        background-repeat: repeat;
+        height:2800px;
+        align-items: center;
+       }
+        .head{
+            padding-left:20px;
+            font-size:20px;
+            padding-bottom:15px;
+            padding-top:15px;
+            color:orange;
+            background-color:black ;
+        }
+        .h1{
+            color:red;
+            background-color: aqua;
+            text-align: center;
+            font-size:25px;
+            /* padding-top:5px;
+            padding-bottom:5px; */
+    
+        }
+        .d1{
+            
+                margin-left:38%;
+                font-size:20px;
+                margin-bottom:100px;
+                color:white;
+    
+        }
+        .d2{
+            
+            margin-left:30%;
+            font-size:20px;
+            margin-bottom:100px;
+            color:white;
+    
+    }
+    .d3{
+            
+        margin-left:20%;
+        font-size:20px;
+        margin-bottom:100px;
+        color:white;
+    
+    }
+        .inp{
+            width:400px;
+            height:30px;
+            font-size: 20px;
+            background-color:black;
+            opacity:0.5;
+            color:white;
+            border-radius: 15px;
+            border-style:inset;
+        }
+        .choice{
+            background-color: black;
+            color:white;
+            width:400px;
+            height:30px;
+        }
+        .textar{
+            /* font-size: 40px; */
+            background:black;
+            color:white;
+            border-radius: 20px;
+            border-style:inset;
+    
+            opacity: 0.8;
+        }
+        .submit{
+            margin-left:150px;
+            background-color: aqua;
+            font-size: 25px;;
+            padding-left:20px;
+            padding-right:20px;
+            padding-top:20px;
+            padding-bottom:20px;
+            border-radius: 20px;
+            position: absolute;
+        }  
+        textarea
+        {
+            font-size: 20px;
+        }  
+    </style>
+</head>
+<body>
+    <div class="head">
+        <h1>Information Form</h1>
+        Enter your Details In The Form Given Below
+    </div>
+    <div class="h1">
+        <h1>Personal Details</h1>
+    </div>
+    <div class="d1">
+        <br><br>
+<form id="portfolioForm">
+            Name <br> <input type="text" class="inp" id="name" required><br><br>
+            Email Id:<br> <input type="text" class="inp" id="email" required><br><br>
+            Contact No.:<br><input type="number" class="inp" id="contactno" required><br><br>
+            Date Of Birth:<input type="date" required><br><br>
+            Select your Gender:            
+           <input type="radio" name ="gender" id="male">
+           <label for="male">Male</label>
+           <input type="radio" name="gender" id="female">
+           <label for="female">Female</label>
+           <input type="radio" name="gender" id="other">
+           <label for="other">Other</label><br><br>
+          
+           Nationality: <br><input type="text" class="inp" required><br><br>
+           Linkedin Id: <br><input type="text" class="inp" id="linkid" required><br><br>
+           Github: <br><input type="text" class="inp" id="github" required>
+
+   
+</div>
+<div class="h1">
+    <h1>Breif Details</h1>
+</div>
+<div class="d2">
+    <br><br>
+    <b>Present Workplace/Institution Name With Designation</b><br>
+    <textarea id="Inst" cols="60" rows="2" class="textar" ></textarea><br><br>
+    <b>Breif Introduction</b><br>
+    <textarea id="Intro" cols="60" rows="2" class="textar" placeholder="Include your expertise,passion,work domain" ></textarea><br><br>
+</div>
+    
+    <div class="h1">
+          <h1>Educational Details</h1>
+        </div><br>
+    <div class="d1">
+          Class 10th percentage:<br><input type="number" required class="inp"><br>
+          Class 10th Board:<br> <select name="board" class="choice">
+            <option value ="CBSE">CBSE</option>
+            <option value="ICSE">ICSE</option>
+            <option value="State Board">State Board</option>
+            <option value="others">others</option>
+        </select><br>
+        Class 10th School Name:<br> <input type="text" class="inp" required> <br><br>
+
+        Class 12th percentage:<br><input type="number" class="inp" required><br>
+          Class 12th Board: <br><select name="board" class="choice">
+            <option value ="CBSE">CBSE</option>
+            <option value="ICSE">ICSE</option>
+            <option value="State Board">State Board</option>
+            <option value="others">others</option>
+        </select><br>
+        Class 12th School Name:<br> <input type="text" class="inp" required> <br><br>
+        School Life details <br>
+      <textarea name="" id="" cols="50" rows="10" class="textar" placeholder="Describe about sports,co-curricular activities etc" ></textarea><br><br>
+
+        Graduation Percentage:<br><input type="number" required class="inp"><br>
+        College/University Name:<br> <input type="text" class="inp" required><br>
+        College Life details <br>
+      <textarea name="" id="" cols="50" rows="10" class="textar" placeholder="Describe about sports,co-curricular activities etc" ></textarea><br><br>
+
+       
+
+        <br><br>
+        <b>Work Experience:</b><br><select name="exp" class="choice" class="inp">
+            <option value ="Fresher">Fresher</option>
+            <option value="1-5">1-5years</option>
+            <option value="6-10">6-10years</option>
+            <option value="11-15">11-15years</option>
+            <option value="15+">15+</option>
+        </select><br>
+        </div>
+        <div class="h1">
+            <h1>Hobbies And Acheivements</h1>
+        </div>
+        <div class="d3">  
+        <br>
+       
+        <b>Your Acheivements:</b><br>
+        <textarea  id="ach" cols="90" rows="10" class="textar" ></textarea><br><br>
+
+        <b>Your Hobbies</b><br>
+        <textarea id="hob" cols="90" rows="15" class="textar"></textarea><br><br>
+        </div>
+        <div class="h1">
+            <h1>Skills And Experiences</h1>
+        </div>
+        <div class="d3">
+        <br><br>
+        <b>Your Skills:</b><br>
+        <textarea id="skill" cols="90" rows="15" class="textar" ></textarea><br><br>
+        <b>Your Experience/Past Projects Worked Upon:</b><br>
+        <textarea  id="exp" cols="90" rows="15" class="textar"></textarea><br><br>
+        <!-- <input type="submit" value="Submit the form" class="submit"> -->
+    </div>
+    <button type="submit" class="submit">Create</button>
+</form>
+<script>
+    // Function to handle form submission
+    function createPortfolio(event) {
+      event.preventDefault(); // Prevent form submission
+
+      // Get the form inputs
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const contactno = document.getElementById('contactno').value;
+      const linkid = document.getElementById('linkid').value;
+      const github = document.getElementById('github').value;
+      const Inst = document.getElementById('Inst').value;
+      const Intro = document.getElementById('Intro').value;
+      const ach = document.getElementById('ach').value;
+      const hob = document.getElementById('hob').value;
+      const skill = document.getElementById('skill').value;
+      const exp = document.getElementById('exp').value;
+    //   const description = document.getElementById('description').value;
+
+      // Store the data in localStorage
+      localStorage.setItem('name', name);
+      localStorage.setItem('email', email);
+      localStorage.setItem('contactno', contactno);
+      localStorage.setItem('linkid', linkid);
+      localStorage.setItem('github', github);
+      localStorage.setItem('Inst', Inst);
+      localStorage.setItem('Intro', Intro);
+      localStorage.setItem('ach',ach);
+      localStorage.setItem('hob', hob);
+      localStorage.setItem('skill', skill);
+      localStorage.setItem('exp', exp);
+
+    //   localStorage.setItem('description', description);
+
+      // Redirect to the display page
+      window.location.href = 'test2.html';
+    }
+
+    // Add event listener to the form
+    const form = document.getElementById('portfolioForm');
+    form.addEventListener('submit', createPortfolio);
+</script>
+    
+</body>
+</html>
